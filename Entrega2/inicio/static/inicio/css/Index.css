@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+    
+}
+
+li,a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252A;
+    
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+
+
+
+.inicio{
+    color: #e62e1b;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    
+    
+}
+
+div.contenedor{
+    margin: 20px auto;
+    width: 50%;
+    padding: 15px;
+    
+    background-color: #ecece7;
+    
+    
+}
+div.conten{
+    margin: 20px auto;
+    width: 50%;
+    padding: 15px;
+    
+    background-color: #ecece7;
+}
+
+div.contenedor img.artesania1{
+    width: 450px;
+    height: 250px;
+    display: block;
+    float: right;
+    margin-left: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+    transition: all 0.8s;
+    
+    
+}
+div.contenedor img.artesania2{
+    width: 400px;
+    height: 250px;
+    display: block;
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+    transition: all 0.8s;
+    
+}
+div.conten img.artesania5{
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-top: 10px;
+    overflow: hidden;
+    transition: all 0.8s;
+    
+}
+div.conten img.artesania6{
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-top: 10px;
+    overflow: hidden;
+    transition: all 0.8s;
+    
+}
+div.conten img.artesania7{
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-top: 10px;
+    overflow: hidden;
+    transition: all 0.8s;
+    
+}
+div.conten img.artesania8{
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-top: 10px;
+    overflow: hidden;
+    transition: all 0.8s;
+    
+}
+
+.contenido{
+    color:#24252A;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contenido2{
+    color:#24252A;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+div.reset{
+    clear: both;
+}
+
+.aside1{
+margin-top: 50px;
+}
+.aside2{
+    margin-top: 20px;
+    }
+
+    footer{
+        background-color: #24252A;
+        color:blanchedalmond;
+        text-align: center;
+        padding: 1%;
+    }
+
+    .facebook{
+        width: 2%;
+   
+        height: 2%;
+        
+    }
+
+    .instagram{
+        width: 2%;
+        margin-left: 50px;
+       
+        height: 2%;
+        
+    }
+
+    .twitter{
+        width: 2%;
+        margin-left: 50px;
+        height: 2%;
+        
+
+    }
+
+    .artesanias{
+        width: 730px;
+        height: 450px;
+    }
+
+/* Inicio de sesion */
+
+    h1, h2, h3, h4, h5, a {
+        margin:0; padding:0;
+      }
+      .login {
+        margin:0 auto;
+        max-width:600px;
+      }
+      .login-header {
+          margin-top: 20px;
+        color:black;
+        text-align:center;
+        font-size:150%;
+      }
+      
+      
+      .login-form {
+        border:.5px solid #fff;
+        background:#24252A;
+        border-radius:10px;
+        box-shadow:0px 0px 10px #000;
+      }
+      .login-form h3 {
+        text-align:left;
+        margin-left:40px;
+        color:white;
+      }
+      .login-form {
+        box-sizing:border-box;
+      
+        margin:5% auto;
+        text-align:center;
+      }
+      .login input[type="text"],
+      .login input[type="password"] {
+        max-width:400px;
+          width: 80%;
+        line-height:3em;
+        font-family: 'Ubuntu', sans-serif;
+        margin:1em 2em;
+        border-radius:5px;
+        border:2px solid #f2f2f2;
+        outline:none;
+        
+      }
+      .login-form input[type="submit"] {
+        height:30px;
+        width:100px;
+        background:#fff;
+        border:1px solid #f2f2f2;
+        border-radius:20px;
+        color: black;
+        text-transform:uppercase;
+        font-family: 'Ubuntu', sans-serif;
+        cursor:pointer;
+        margin-top: 10px;
+      }
+
+     
+
+      .container-sm .card{
+        width: 300px;
+        height: 430px;
+        border-radius: 8px;
+        box-shadow: white;
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.25s;
+    }
+      
+    
+      
+      /*Media Querie*/
+      @media only screen and (min-width : 150px) and (max-width : 530px){
+        .login-form h3 {
+          text-align:center;
+          margin:0;
+        }
+      
+        .login-button {
+          margin-bottom:10px;
+        }
+      }
+
+    

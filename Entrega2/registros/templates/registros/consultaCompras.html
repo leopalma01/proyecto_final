@@ -1,0 +1,59 @@
+{% extends 'inicio/encabezado.html' %}
+{% block titulo %}Compras{% endblock titulo %}
+{% block imagen %}
+    {%load static%}
+    {%static 'inicio/Imagenes/artesania8.jpg'%}
+{% endblock imagen %}
+{% block texto%}compras {%endblock%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{%block men%}<h1 class="inicio">Bienvenidos a su pagina de compras</h1>{%endblock%}
+
+
+{%block contenido%}
+	<!-- Tabla de Alumnos -->
+<table class="table table-bordered tablestriped" BORDER="1">
+	<thead>
+		<tr>
+			<th>Articulo</th>
+			<th>Nombre</th>
+			<th>Email</th>
+			<th>Telefono</th>
+            <th>Direccion</th>
+            
+
+
+		</tr>
+	</thead>
+
+
+<tbody>
+<tbody>
+<tbody>
+    {% for compra in compras %}
+      <tr>
+        <td class="text-center">{{compra.art}}</td> 
+        <td class="text-center">{{compra.usuario}}</td>
+        <td class="text-semibold">{{compra.email}}</td>
+        <td class="muted">{{compra.tel}}</td>
+        <td class="muted">{{compra.dir}}</td>
+        <td class="text-center"><a href="{%url 'Articulo' compra.id%}">Editar</a> Editar</td>
+        <td class="text-center"><a href="{%url 'EliminarArticulo' compra.id%}">Eliminar</a>Eliminar</td>
+        
+    </tr>
+{% endfor %}
+</tbody>
+</tbody>
+</table>
+<!-- /Tabla de alumnos -->
+    <br><br>
+    <br>
+    <br>
+    <br>
+
+    
+    
+</body>
+{%endblock%}
+</html>

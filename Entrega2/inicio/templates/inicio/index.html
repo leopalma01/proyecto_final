@@ -1,0 +1,44 @@
+
+{% extends 'inicio/encabezado.html' %}
+{% block titulo %}Index{% endblock titulo %}
+{% block imagen %}
+    {%load static%}
+    {%static 'inicio/Imagenes/artesania2.jpg'%}
+{% endblock imagen %}
+{% block texto%}Principal {%endblock%}
+
+{%block men%}<h1 class="inicio">Bienvenidos a su pagina principal</h1>{%endblock%}
+
+{% block contenido %}
+<body>
+
+
+
+    
+
+<div class="contenedor">
+
+<img class="artesania1" src="{% static 'inicio/imagenes/artesania1.jpg'%}" alt="artesania1">
+<h1 class="contenido">Colección</h1>
+<aside class="aside1">Basta colección en la comodidad de tu casa, de todo michoacán.</aside>
+    
+
+<div class="reset"></div>
+</div>
+
+<div class="contenedor">
+   
+<img class="artesania2" src="{% static 'inicio/imagenes/artesania2.jpg'%}" alt="artesania2">
+<h1 class="contenido2">Artesanias de Michoacán</h1>
+<aside class="aside2">Hoy en dia las artesanias son muy valoradas, ya sea por su complejidad o por el tipo de material con el que estan hechas.</aside>
+<div class="reset"></div>
+</div>
+
+
+
+</body>
+
+
+{%endblock%}
+
+</html>
