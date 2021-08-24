@@ -1,0 +1,59 @@
+{% extends 'inicio/encabezado.html' %}
+{% block titulo %}Catalogo{% endblock titulo %}
+{% block imagen %}
+    {%load static%}
+    {%static 'inicio/Imagenes/artesania8.jpg'%}
+{% endblock imagen %}
+{% block texto%}Catalogo {%endblock%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{%block men%}<h1 class="inicio">Bienvenidos a su pagina de catalogo</h1>{%endblock%}
+
+
+{%block contenido%}
+	<!-- Tabla de Alumnos -->
+<table class="table table-bordered tablestriped">
+	<thead>
+		<tr>
+			<th>Foto</th>
+			<th>Nombre</th>
+			<th>Material</th>
+			<th>Costo</th>
+            <th>Comprar</th>
+            
+
+
+		</tr>
+	</thead>
+
+
+<tbody>
+<tbody>
+<tbody>
+    {% for alumno in alumnos %}
+      <tr>
+        <td class="text-center">
+            <img src="{{alumno.imagen.url}}" alt="" class="img-media">
+        </td>
+        <td class="text-semibold">{{alumno.nombre}}</td>
+        <td class="muted">{{alumno.material}}</td>
+        <td class="muted">{{alumno.costo}}</td>
+        <td><input onclick="alert('Registre sus datos para comprar con exito!')" type="submit" value="COMPRAR" /></td>
+        
+    </tr>
+{% endfor %}
+</tbody>
+</tbody>
+</table>
+<!-- /Tabla de alumnos --><
+    <br><br>
+    <br>
+    <br>
+    <br>
+
+    
+    
+</body>
+{%endblock%}
+</html>

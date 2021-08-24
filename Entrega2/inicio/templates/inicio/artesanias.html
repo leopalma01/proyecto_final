@@ -1,0 +1,47 @@
+{% extends 'inicio/encabezado.html' %}
+
+
+{% block titulo %}Artesanias{% endblock titulo %}
+{% block imagen %}
+    {%load static%}
+    {%static 'inicio/Imagenes/artesania3.jpg'%}
+{% endblock imagen %}
+{% block texto%}Artesanias {%endblock%}
+
+
+{%block men%}<h1 class="inicio">Bienvenidos a su pagina de artesanias</h1>{%endblock%}
+
+{% block contenido %}
+    <div class="contenedor">
+
+        <img class="artesania2" src="{% static 'inicio/Imagenes/artesania3.jpg'%}" alt="artesania3">
+        <h1 class="contenido">Materiales</h1>
+        <aside class="aside1">Algunas de ellas son fabricadas con barro, tela, lana, etc. </aside>
+            
+        
+        <div class="reset"></div>
+        </div>
+        
+        <div class="contenedor">
+           
+        <img class="artesania2" src="{% static 'inicio/Imagenes/artesania4.jpg'%}" alt="artesania2">
+        <h1 class="contenido2">Artesanias Top</h1>
+        <aside class="aside2">Las artesanias mas vendidas en mexico. Los objetos creados de manos de los artesanos nos brindan el sueño de viajar a las culturas antiguas, además de que representan la diversidad cultural del país y por supuesto la creatividad de nuestros pueblos.</aside>
+        <div class="reset"></div>
+        </div>
+
+
+        <div class="conten">
+           
+      <img class="artesania5"  src="{% static 'inicio/Imagenes/artesania5.jpg'%}" alt="artesania5">
+      <img class="artesania6" src="{% static 'inicio/Imagenes/artesania6.jpg'%}" alt="artesania6">
+      <img class="artesania7" src="{% static 'inicio/Imagenes/artesania7.jpg'%}" alt="artesania7">
+      <img class="artesania8" src="{% static 'inicio/Imagenes/artesania8.jpg'%}" alt="artesania8">
+      
+        </div>
+
+
+    
+</body>
+{%endblock%}
+</html>

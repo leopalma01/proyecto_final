@@ -1,0 +1,43 @@
+{% extends 'inicio/encabezado.html' %}
+
+{% block titulo %}Agregar Compra{% endblock titulo %}
+{% block imagen %}
+    {%load static%}
+    {%static 'inicio/Imagenes/artesania6.jpg'%}
+{% endblock imagen %}
+{% block texto%} {%endblock%}
+
+{%block men%}<h1 class="inicio">Bienvenidos a su pagina de registro</h1>{%endblock%}
+
+
+{%block contenido%}
+    <div class="login">
+        <div class="login-header">
+          <h1>Registrar datos</h1>
+        </div>
+        <form   class="login-form" method="post" action="{% url 'RegistrarArticulo'%}" role="form">
+            {%csrf_token%}
+          <p><h3>Articulo:</h3>
+          <input name="art" id="articulo" type="text" placeholder="Ingrese articulo deseado" /><br></p>  
+          <p><h3>Usuario:</h3>
+          <input name="usuario" id="usuario" type="text" placeholder="Ingrese un usuario" /><br></p>
+          <p><h3>Email:</h3>
+          <input name="email" id="email" type="text" placeholder="Ingrese su Email" /></p>
+          <p><h3>Telefono:</h3>
+          <input name="tel" id="telefono" type="text" placeholder="Ingrese su numero de telefono" /></p>
+          <p><h3>Direccion:</h3>
+          <input name="dir" id="ciudad" type="text" placeholder="Direccion" /></p>
+          <input type="submit" value="Enviar" />
+          
+         
+        
+          </form>
+      </div>
+      
+      
+      
+
+</body>
+{%endblock%}
+
+</html>

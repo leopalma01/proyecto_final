@@ -1,0 +1,42 @@
+{% extends 'inicio/encabezado.html' %}
+
+{% block titulo %}Crear usuario{% endblock titulo %}
+{% block imagen %}
+    {%load static%}
+    {%static 'inicio/Imagenes/artesania6.jpg'%}
+{% endblock imagen %}
+{% block texto%}Creacion de Usuarios {%endblock%}
+
+{%block men%}<h1 class="inicio">Bienvenidos a su pagina de incicio de sesion</h1>{%endblock%}
+
+
+{%block contenido%}
+    <div class="login">
+        <div class="login-header">
+          <h1>Registrar nuevo usuario</h1>
+        </div>
+        <form   class="login-form">
+          <p><h3>Usuario:</h3>
+          <input name="usuario" id="usuario" type="text" placeholder="Ingrese un usuario" /><br></p>
+          <p><h3>Contraseña:</h3>
+          <input name="contraseña" id="contraseña" type="password" placeholder="Ingrese una contraseña" /></p>
+          <p><h3>Email:</h3>
+          <input name="email" id="email" type="text" placeholder="Ingrese su Email" /></p>
+          <p><h3>Telefono:</h3>
+          <input name="telefono" id="telefono" type="text" placeholder="Ingrese su numero de telefono" /></p>
+          <p><h3>Ciudad:</h3>
+          <input name="ciudad" id="ciudad" type="text" placeholder="Ciudad de origen" /></p>
+          <input onclick="return valida();"  type="submit" value="Registrar" />
+          
+         
+        
+          </form>
+      </div>
+      
+      
+      
+
+</body>
+{%endblock%}
+
+</html>
